@@ -1,0 +1,81 @@
+@import '../../variables.scss';
+
+header{
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+    .header__container{
+        height: 100%;
+        position: relative;
+        text-align: center;
+
+        .cta{
+            margin-top: 2.5rem;
+            display: flex;
+            gap: 1.2rem;
+            justify-content: center;
+        }
+
+        .header__socials{
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            position: absolute;
+            left: 0;
+            bottom: 3rem;
+            align-items: center;
+
+            &::after{
+                content: '';
+                width: .1rem;
+                height: 2rem;
+                background: $color-primary;
+            }
+        }
+
+        .me{
+            background: transparent;
+            width: 22rem;
+            height: 30rem;
+            position: absolute;
+            left: calc(50% - 11rem);
+            margin-top: 5rem;
+            display: flex;
+            justify-content: center;
+            &__image{
+                width: 100%;
+                img{
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .scroll__down{
+            position: absolute;
+            right: -2.3rem;
+            bottom: 5rem;
+            transform: rotate(90deg);
+            font-weight: 200;
+            font-size: .9rem;
+        }
+    }
+    @media screen and (max-width: 1024px){
+        header{
+            height: 68vh;
+        }
+      }
+    @media screen and (max-width: 600px){
+        header{
+            height: 100vh;
+        }
+        .header__socials,.scroll__down{
+            display: none !important;
+        }
+        .me{
+            margin-top: 2rem !important;
+            &__image{
+                width: 70% !important;
+            }
+        }
+      }
+}
