@@ -2,6 +2,8 @@
 
 .testimonials__container{
     width: 40%;
+    padding-bottom: 4rem !important;
+    overflow: auto;
 
     .testimonial{
         background: $color-bg-variant;
@@ -9,6 +11,7 @@
         border-radius: 2rem;
         padding: 2rem;
         user-select: none;
+        box-sizing: border-box;
 
         .client__review{
             color: $color-light;
@@ -28,3 +31,17 @@
         border: .4rem solid $color-primary-variant;
     }
 }
+@media screen and (max-width: 1024px){
+    .testimonials__container{
+        width: 60%;
+    }
+  }
+@media screen and (max-width: 600px){
+    .testimonials__container{
+        width: $container-width-ms;
+
+        .client__review{
+            width: $container-width-ms;
+        }
+    }
+  }

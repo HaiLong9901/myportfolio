@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "swiper": "^8.1.3"
   }
 }
