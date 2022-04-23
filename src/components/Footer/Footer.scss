@@ -1,2 +1,68 @@
 @import '../../variables.scss';
 
+footer{
+    background: $color-primary;
+    padding: 3rem 0;
+    text-align: center;
+    font-size: .9rem;
+    margin-top: 7rem;
+    box-sizing: border-box;
+
+    a{
+        color: $color-bg;
+    }
+
+    .footer__logo{
+        font-size: 2rem;
+        display: block;
+        margin-bottom: 2rem;
+        font-weight: 500;
+    }
+
+    .permalinks{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        margin: 0rem auto 3rem;
+    }
+
+    .footer__socials{
+        display: flex;
+        margin-bottom: 4rem;
+        gap: 1rem;
+        justify-content: center;
+
+        a{
+            display: flex;
+            border-radius: .7rem;
+            background: $color-bg;
+            border: .1rem solid transparent;
+            padding: .8rem;
+            color: $color-white;
+            transition: $transition;
+
+            &:hover{
+                background: transparent;
+                color: $color-bg;
+                border-color: $color-bg;
+            }
+        }
+    }
+
+    .footer__copyright{
+        margin-bottom: 4rem;
+        color: $color-bg;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .permalinks{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .footer__socials{
+        margin-bottom: 2.6rem;
+    }
+  }

@@ -4,7 +4,7 @@ import { BsBookmarkCheckFill } from 'react-icons/bs'
 
 const Services = () => {
   return (
-    <section id='service'>
+    <section id='services'>
       <h5>What I Offer ?</h5>
       <h2>Services</h2>
 
